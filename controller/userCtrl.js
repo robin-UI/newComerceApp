@@ -165,7 +165,7 @@ const logOut = asyncHandler(async (req, res) => {
     res.clearCookie('refreshToken', {
         httpOnly: true,
         secure: true
-    })
+    }) 
     return res.sendStatus(204) //Forbidden
 })
 
